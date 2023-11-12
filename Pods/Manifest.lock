@@ -1,16 +1,20 @@
 PODS:
   - OpenSSL-Universal (1.0.2.13)
+  - RegexKitLite (4.0)
 
 DEPENDENCIES:
   - OpenSSL-Universal
+  - RegexKitLite
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - OpenSSL-Universal
+    - RegexKitLite
 
 SPEC CHECKSUMS:
   OpenSSL-Universal: 401888162f11c33ebbd46f782d9229da35c61327
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
 
-PODFILE CHECKSUM: d6510387ca756cad3ee428bd1a16ee0387b1d419
+PODFILE CHECKSUM: a5b8ce312eca10ef7565ab337ee16b28b4d259a3
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.14.2

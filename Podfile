@@ -9,3 +9,7 @@ end
 target 'libwired-osx' do
    pod 'OpenSSL-Universal'
 end
+
+target 'WiredFoundation' do
+   pod 'RegexKitLite'
+end
