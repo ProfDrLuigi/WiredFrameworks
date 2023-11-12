@@ -4,20 +4,7 @@ WiredFrameworks is an Xcode project that regroups library and framework targets 
 
 See this [page](http://www.read-write.fr/wired/wiki) to find more documentation about Wired
 
-## Details
-
-The Xcode project is composed of the following main targets:
-
-- libwired (osx, ios) -> https://github.com/profdrluigi/libwired
-- WiredFoundation (osx, ios)
-- WiredNetworking (osx, ios)
-- WiredAppKit (osx)
-- WiredUIKit (ios)
-
 ## How to use it
-
-For every platforms:
-* Init required submodules (libwired and openssl):
 
 		brew install cocoapods svn
   		git clone https://github.com/ProfDrLuigi/WiredFrameworks
@@ -26,21 +13,6 @@ For every platforms:
   		pod install
 		cp -r Pods/RegexKitLite WiredFoundation/.
 				
-* Add `WiredFrameworks.xcodeproj` as a subproject to your Xcode project.
-
-#### For OSX:
-
-1. In your project's Build Phases, Add libwired-osx, WiredFoundation, WiredNetworking and WiredNetworking **targets as dependencies** of your project.
-
-2. **Link your binary** with WiredFoundation, WiredNetworking and WiredNetworking frameworks.
-
-3. Add a **Copy Files Phase** with its **destination** pointing to "Frameworks" directory, then add WiredFoundation, WiredNetworking and WiredNetworking products to it.
-
-4. In your project's Build Settings, add `@loader_path/../Frameworks` **Runpath Search Paths**.
-
-5. And add `"$(BUILT_PRODUCTS_DIR)"` to **Header Search Paths**.
-
-
 ## Authors
 
 Most of the code distributed here was originally written by Axel Andersson at Zanka Software. My contribution here is mainly related to iOS support and bug fixing.
