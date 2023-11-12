@@ -8,7 +8,7 @@ See this [page](http://www.read-write.fr/wired/wiki) to find more documentation 
 
 The Xcode project is composed of the following main targets:
 
-- libwired (osx, ios) -> https://github.com/nark/libwired
+- libwired (osx, ios) -> https://github.com/profdrluigi/libwired
 - WiredFoundation (osx, ios)
 - WiredNetworking (osx, ios)
 - WiredAppKit (osx)
@@ -19,8 +19,12 @@ The Xcode project is composed of the following main targets:
 For every platforms:
 * Init required submodules (libwired and openssl):
 
+		brew install cocoapods svn
+  		git clone https://github.com/ProfDrLuigi/WiredFrameworks
 		cd WiredFrameworks/
-		git submodule update --init --recursive
+		git clone https://github.com/ProfDrLuigi/libwired
+  		pod install
+		cp -r Pods/RegexKitLite WiredFoundation/.
 				
 * Add `WiredFrameworks.xcodeproj` as a subproject to your Xcode project.
 
@@ -35,10 +39,6 @@ For every platforms:
 4. In your project's Build Settings, add `@loader_path/../Frameworks` **Runpath Search Paths**.
 
 5. And add `"$(BUILT_PRODUCTS_DIR)"` to **Header Search Paths**.
-
-#### For iOS:
-
-TODO...
 
 
 ## Authors
