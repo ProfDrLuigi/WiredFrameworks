@@ -1,6 +1,6 @@
 # Wired Frameworks
 
-WiredFrameworks is an Xcode project that regroups library and framework targets involved in the Wired 2.0 implementation on Apple platforms (OSX and iOS).
+WiredFrameworks is an Xcode project that regroups library and framework targets involved in the Wired 2.5 implementation on OSX.
 
 See this [page](http://www.read-write.fr/wired/wiki) to find more documentation about Wired
 
