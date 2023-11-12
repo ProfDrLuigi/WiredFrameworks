@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = "OpenSSL-Universal";
-			productName = "OpenSSL-Universal";
 		};
 /* End PBXAggregateTarget section */
 
@@ -131,14 +130,14 @@
 		9B0034B5B8F66EF50115943462AFD39C /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-macos/openssl/rand.h"; sourceTree = "<group>"; };
 		9C8725E8E0ACAA5A22B91BA842CF09EE /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-macos/openssl/krb5_asn.h"; sourceTree = "<group>"; };
 		9D48AAECA1435A8FCF7604D38F001CA5 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-macos/openssl/x509v3.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3FE535BE6A83BFA6263FDC25CD54A71 /* RegexKitLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RegexKitLite.debug.xcconfig; sourceTree = "<group>"; };
 		A5CA062792C1C5257DEB8A3D8324E5CA /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-macos/openssl/asn1_mac.h"; sourceTree = "<group>"; };
 		A8758C767A7CF8B6E655793DD6FB3282 /* RegexKitLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RegexKitLite-dummy.m"; sourceTree = "<group>"; };
 		A884B1F4B74BEB813525C418005D21F0 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-macos/openssl/ossl_typ.h"; sourceTree = "<group>"; };
 		AB1D19F68F7D80C4354B29035E44DD15 /* Pods-WiredNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WiredNetworking-umbrella.h"; sourceTree = "<group>"; };
 		AE5EAAF79BE808E19FE03A9E18EA4BD9 /* RegexKitLite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RegexKitLite-Info.plist"; sourceTree = "<group>"; };
-		B1E946AF72A7CE4E39ECEBF57DA18917 /* RegexKitLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RegexKitLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E946AF72A7CE4E39ECEBF57DA18917 /* RegexKitLite */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RegexKitLite; path = RegexKitLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B426F257F882453C4FD1039AB6039B5C /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-macos/openssl/md5.h"; sourceTree = "<group>"; };
 		B5D84B8F8831C9F8C5AB8C61808BAE3B /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-macos/openssl/ssl3.h"; sourceTree = "<group>"; };
 		B96383A87136AB6E1227D8F2A319E9FA /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-macos/openssl/symhacks.h"; sourceTree = "<group>"; };
@@ -271,6 +270,7 @@
 				46BE22ECE355784EF52BFC2D79B24363 /* RegexKitLite.m */,
 				1FEA73AD9559DA95F0DF55D7F09AB856 /* Support Files */,
 			);
+			name = RegexKitLite;
 			path = RegexKitLite;
 			sourceTree = "<group>";
 		};
@@ -280,7 +280,7 @@
 				CBF7099764FE6798FB4E460749FE1F74 /* Pods-libwired-osx */,
 				6264867ACB97183A538470FDB13E48B9 /* Pods-WiredFoundation */,
 				6F7C3C54C836C99CF43B16BE9D30E2D1 /* Pods-WiredNetworking */,
-				B1E946AF72A7CE4E39ECEBF57DA18917 /* RegexKitLite.framework */,
+				B1E946AF72A7CE4E39ECEBF57DA18917 /* RegexKitLite */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,6 +366,7 @@
 				A3A10724A080B60C3BDA54C01C0F7CC5 /* Frameworks */,
 				B4B6FF6ECC81D0D46421EAA7A423EB79 /* Support Files */,
 			);
+			name = "OpenSSL-Universal";
 			path = "OpenSSL-Universal";
 			sourceTree = "<group>";
 		};
@@ -561,7 +562,7 @@
 			);
 			name = RegexKitLite;
 			productName = RegexKitLite;
-			productReference = B1E946AF72A7CE4E39ECEBF57DA18917 /* RegexKitLite.framework */;
+			productReference = B1E946AF72A7CE4E39ECEBF57DA18917 /* RegexKitLite */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -986,7 +987,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
