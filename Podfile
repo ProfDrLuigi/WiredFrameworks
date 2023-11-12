@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
-platform :osx, '10.10'
+platform :osx, '10.13'
 
 target 'WiredNetworking' do
     pod 'OpenSSL-Universal'
